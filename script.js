@@ -10,7 +10,7 @@ const gameData = {
     mobileLegends: {
         name: "Mobile Legends",
         currency: "Diamond",
-        icon: "assets/ml lgo.jpg",
+        icon: "assets/ml-lgo.jpg",
 
         products: [
             { amount: 10, price: 3000 },
@@ -25,7 +25,7 @@ const gameData = {
     roblox: {
         name: "Roblox",
         currency: "Robux",
-        icon: "assets/logo roblox.png",
+        icon: "assets/logo-roblox.png",
 
         products: [
             { amount: 80, price: 15000 },
