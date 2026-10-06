@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AmondShop - Top Up Game Online</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>Amond</span>Shop
+        </div>
+
+        <div class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#topup">Top Up</a>
+            <a href="#cara">Cara Top Up</a>
+        </div>
+
+        <button class="nav-button" onclick="scrollToTopup()">
+            Top Up
+        </button>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <!-- Background -->
+
+        <div class="orb orb-blue"></div>
+        <div class="orb orb-purple"></div>
+        <div class="orb orb-pink"></div>
+
+        <div class="grid-background"></div>
+
+
+        <!-- Floating Elements -->
+
+        <div class="floating-item diamond-float">
+            💎
+        </div>
+
+        <div class="floating-item coin-float">
+            🪙
+        </div>
+
+        <div class="floating-item star-float">
+            ✦
+        </div>
+
+        <div class="floating-item star-float-2">
+            ✦
+        </div>
+
+
+        <!-- Decorative Characters -->
+
+        <div class="character character-left">
+
+            <div class="character-glow"></div>
+
+            <div class="character-body">
+                <div class="character-head"></div>
+                <div class="character-armor"></div>
+                <div class="character-sword">⚔</div>
+            </div>
+
+        </div>
+
+
+        <div class="character character-right">
+
+            <div class="character-glow purple"></div>
+
+            <div class="character-body roblox-character">
+                <div class="character-head square-head"></div>
+                <div class="character-armor purple-armor"></div>
+                <div class="character-sword">★</div>
+            </div>
+
+        </div>
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                ⚡ FAST • SAFE • TRUSTED
+            </div>
+
+            <h1>
+                Welcome to
+                <span>AmondShop</span>
+            </h1>
+
+            <h2>
+                Top Up Game Favoritmu
+            </h2>
+
+            <p>
+                Isi Diamond, Robux, dan kebutuhan game lainnya
+                dengan cepat, mudah, dan aman.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="primary-button"
+                    onclick="scrollToGames()"
+                >
+                    🎮 Pilih Game
+                </button>
+
+                <button
+                    class="secondary-button"
+                    onclick="scrollToTopup()"
+                >
+                    💎 Top Up Sekarang
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FLOATING GAME CARDS -->
+
+        <div class="mini-game-card ml-card">
+
+            <img
+                src="assets/ml lgo.jpg"
+                alt="Mobile Legends"
+                class="mini-game-logo"
+            >
+
+            <div>
+                <strong>Mobile Legends</strong>
+                <small>Diamond</small>
+            </div>
+
+        </div>
+
+
+        <div class="mini-game-card roblox-card">
+
+            <img
+                src="assets/logo roblox.png"
+                alt="Roblox"
+                class="mini-game-logo"
+            >
+
+            <div>
+                <strong>Roblox</strong>
+                <small>Robux</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GAME SECTION ================= -->
+
+    <section class="games-section" id="games">
+
+        <div class="section-heading">
+
+            <span>GAME FAVORIT</span>
+
+            <h2>
+                Mau Top Up <b>Game Apa?</b>
+            </h2>
+
+            <p>
+                Pilih game yang ingin kamu isi sekarang.
+            </p>
+
+        </div>
+
+
+        <div class="game-grid">
+
+            <!-- MOBILE LEGENDS -->
+
+            <div
+                class="game-card"
+                onclick="selectGame('Mobile Legends')"
+            >
+
+                <div class="game-card-bg ml-bg"></div>
+
+                <div class="game-card-content">
+
+                    <div class="game-logo ml-logo">
+
+                        <img
+                            src="assets/ml lgo.jpg"
+                            alt="Mobile Legends"
+                        >
+
+                    </div>
+
+                    <div>
+
+                        <span>MOBA</span>
+
+                        <h3>
+                            Mobile Legends
+                        </h3>
+
+                        <p>
+                            Diamond
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="arrow">
+                    →
+                </div>
+
+            </div>
+
+
+            <!-- ROBLOX -->
+
+            <div
+                class="game-card"
+                onclick="selectGame('Roblox')"
+            >
+
+                <div class="game-card-bg roblox-bg"></div>
+
+                <div class="game-card-content">
+
+                    <div class="game-logo roblox-logo">
+
+                        <img
+                            src="assets/logo roblox.png"
+                            alt="Roblox"
+                        >
+
+                    </div>
+
+                    <div>
+
+                        <span>ADVENTURE</span>
+
+                        <h3>
+                            Roblox
+                        </h3>
+
+                        <p>
+                            Robux
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="arrow">
+                    →
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TOP UP ================= -->
+
+    <section class="topup-section" id="topup">
+
+        <div class="section-heading">
+
+            <span>TOP UP SEKARANG</span>
+
+            <h2>
+                Isi <b>Game Kamu</b>
+            </h2>
+
+            <p>
+                Proses cepat dengan berbagai pilihan pembayaran.
+            </p>
+
+        </div>
+
+
+        <div class="topup-container">
+
+
+            <!-- ================= LEFT ================= -->
+
+            <div class="form-card">
+
+
+                <!-- STEP 01 -->
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div>
+                        <h3>Pilih Game</h3>
+
+                        <p>
+                            Game yang ingin kamu top up
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="game-selector">
+
+                    <button
+                        class="select-game active"
+                        onclick="changeGame('Mobile Legends', this)"
+                    >
+
+                        <img
+                            src="assets/ml lgo.jpg"
+                            alt="ML"
+                        >
+
+                        Mobile Legends
+
+                    </button>
+
+
+                    <button
+                        class="select-game"
+                        onclick="changeGame('Roblox', this)"
+                    >
+
+                        <img
+                            src="assets/logo roblox.png"
+                            alt="Roblox"
+                        >
+
+                        Roblox
+
+                    </button>
+
+                </div>
+
+
+                <!-- STEP 02 -->
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Data Akun
+                        </h3>
+
+                        <p>
+                            Masukkan informasi akun game
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- USER ID -->
+
+                <div class="input-area">
+
+                    <label id="id-label">
+                        User ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="userId"
+                        placeholder="Masukkan User ID"
+                    >
+
+                    <small id="id-help">
+                        Untuk Mobile Legends, masukkan User ID kamu.
+                    </small>
+
+                </div>
+
+
+                <!-- ZONE ID -->
+
+                <div
+                    class="input-area"
+                    id="zone-area"
+                >
+
+                    <label>
+                        Zone ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="zoneId"
+                        placeholder="Masukkan Zone ID"
+                    >
+
+                    <small>
+                        Cek Zone ID di profil Mobile Legends.
+                    </small>
+
+                </div>
+
+
+                <!-- STEP 03 -->
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Pilih Nominal
+                        </h3>
+
+                        <p>
+                            Pilih jumlah yang kamu inginkan
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="nominal-grid"
+                    id="nominal-list"
+                >
+
+                    <!-- Diisi otomatis oleh JavaScript -->
+
+                </div>
+
+
+                <!-- STEP 04 -->
+
+                <div class="step">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Metode Pembayaran
+                        </h3>
+
+                        <p>
+                            Pilih metode pembayaran
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT -->
+
+                <div class="payment-grid">
+
+                    <button
+                        class="payment active"
+                        onclick="selectPayment(this, 'QRIS')"
+                    >
+                        <span>▦</span>
+                        QRIS
+                    </button>
+
+
+                    <button
+                        class="payment"
+                        onclick="selectPayment(this, 'DANA')"
+                    >
+                        <span>●</span>
+                        DANA
+                    </button>
+
+
+                    <button
+                        class="payment"
+                        onclick="selectPayment(this, 'GoPay')"
+                    >
+                        <span>●</span>
+                        GoPay
+                    </button>
+
+
+                    <button
+                        class="payment"
+                        onclick="selectPayment(this, 'OVO')"
+                    >
+                        <span>●</span>
+                        OVO
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RIGHT ================= -->
+
+            <div class="order-card">
+
+                <div class="order-header">
+
+                    <span>
+                        ORDER SUMMARY
+                    </span>
+
+                    <div class="verified">
+                        ✓ Aman
+                    </div>
+
+                </div>
+
+
+                <!-- SELECTED GAME -->
+
+                <div class="selected-game">
+
+                    <div
+                        class="selected-icon"
+                        id="selected-icon"
+                    >
+
+                        <img
+                            src="assets/ml lgo.jpg"
+                            id="selected-game-image"
+                            alt="Game"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            GAME
+                        </small>
+
+                        <h3 id="selected-game">
+                            Mobile Legends
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT -->
+
+                <div class="order-line">
+
+                    <span>
+                        Produk
+                    </span>
+
+                    <strong id="selected-product">
+                        Belum dipilih
+                    </strong>
+
+                </div>
+
+
+                <!-- PAYMENT -->
+
+                <div class="order-line">
+
+                    <span>
+                        Pembayaran
+                    </span>
+
+                    <strong id="selected-payment">
+                        QRIS
+                    </strong>
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div class="order-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="total-price">
+                        Rp0
+                    </strong>
+
+                </div>
+
+
+                <!-- BUY BUTTON -->
+
+                <button
+                    class="buy-button"
+                    onclick="processOrder()"
+                >
+
+                    BELI SEKARANG
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <div class="secure-info">
+
+                    🔒 Pembayaran aman dan terpercaya
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CARA TOP UP ================= -->
+
+    <section
+        class="how-section"
+        id="cara"
+    >
+
+        <div class="section-heading">
+
+            <span>
+                GAMPANG BANGET
+            </span>
+
+            <h2>
+                Cara <b>Top Up</b>
+            </h2>
+
+        </div>
+
+
+        <div class="steps-container">
+
+
+            <!-- STEP 01 -->
+
+            <div class="how-card">
+
+                <div class="how-number">
+                    01
+                </div>
+
+                <div class="how-icon">
+                    🎮
+                </div>
+
+                <h3>
+                    Pilih Game
+                </h3>
+
+                <p>
+                    Pilih game yang ingin kamu top up.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 02 -->
+
+            <div class="how-card">
+
+                <div class="how-number">
+                    02
+                </div>
+
+                <div class="how-icon">
+                    👤
+                </div>
+
+                <h3>
+                    Masukkan ID
+                </h3>
+
+                <p>
+                    Masukkan ID akun game dengan benar.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 03 -->
+
+            <div class="how-card">
+
+                <div class="how-number">
+                    03
+                </div>
+
+                <div class="how-icon">
+                    💎
+                </div>
+
+                <h3>
+                    Pilih Nominal
+                </h3>
+
+                <p>
+                    Tentukan jumlah item yang kamu inginkan.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 04 -->
+
+            <div class="how-card">
+
+                <div class="how-number">
+                    04
+                </div>
+
+                <div class="how-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Bayar & Selesai
+                </h3>
+
+                <p>
+                    Lakukan pembayaran dan tunggu prosesnya.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Amond<span>Shop</span>
+        </div>
+
+        <p>
+            Top Up Game Online Cepat, Aman, dan Praktis.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            © 2026 AmondShop. All Rights Reserved.
+        </small>
+
+    </footer>
+
+
+    <!-- ================= SUCCESS MODAL ================= -->
+
+    <div
+        class="success-overlay"
+        id="successModal"
+    >
+
+        <div class="success-modal">
+
+            <button
+                class="close-modal"
+                onclick="closeSuccessModal()"
+            >
+                ×
+            </button>
+
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <h2>
+                Pesanan Berhasil!
+            </h2>
+
+
+            <p class="success-subtitle">
+                Pesanan kamu berhasil dibuat.
+            </p>
+
+
+            <div class="success-detail">
+
+
+                <div class="success-row">
+
+                    <span>
+                        Game
+                    </span>
+
+                    <strong id="success-game">
+                        Mobile Legends
+                    </strong>
+
+                </div>
+
+
+                <div class="success-row">
+
+                    <span>
+                        Akun
+                    </span>
+
+                    <strong id="success-user">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div
+                    class="success-row"
+                    id="success-zone-row"
+                >
+
+                    <span>
+                        Zone ID
+                    </span>
+
+                    <strong id="success-zone">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="success-row">
+
+                    <span>
+                        Produk
+                    </span>
+
+                    <strong id="success-product">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="success-row">
+
+                    <span>
+                        Pembayaran
+                    </span>
+
+                    <strong id="success-payment">
+                        QRIS
+                    </strong>
+
+                </div>
+
+
+                <div class="success-total">
+
+                    <span>
+                        Total Pembayaran
+                    </span>
+
+                    <strong id="success-total">
+                        Rp0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="success-message">
+                ⚡ Pesanan akan segera diproses.
+            </div>
+
+
+            <button
+                class="success-button"
+                onclick="closeSuccessModal()"
+            >
+                OKE, MENGERTI
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
